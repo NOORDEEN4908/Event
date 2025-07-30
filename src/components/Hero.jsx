@@ -36,7 +36,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
         >
-          <span>Reimagine Banking with Finastra</span>
+          <span>Reimagine Banking with Finastra tech</span>
           <span className="flex items-center justify-center size-6 p-1 rounded-full bg-indigo-600">
             <svg
               width="14"
