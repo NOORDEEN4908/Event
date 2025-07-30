@@ -54,7 +54,8 @@ const getSessionIcon = (type) => {
 
 const Timeline = () => {
   return (
-    <section id="agenda" className="relative py-16 md:py-20 bg-white">
+<section id="agenda" className="relative py-16 md:py-20 bg-white overflow-x-hidden">
+
  <div className="max-w-6xl mx-auto px-4 flex items-start">
 
         {/* Team Meeting Image - visible on md+ */}
