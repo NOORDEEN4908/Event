@@ -30,7 +30,7 @@ const App = () => {
       <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.1 }} viewport={{ once: true, amount: 0.2 }}>
         <TopReasons />
       </motion.div>
-<div id="#agenda">
+<div id="agenda">
       <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.2 }} viewport={{ once: true, amount: 0.2 }}>
         <AboutEvent />
       </motion.div>
