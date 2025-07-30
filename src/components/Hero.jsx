@@ -116,14 +116,14 @@ const Hero = () => {
           </svg>
         </motion.button>
 
-        {/* Image below */}
-        <div className="relative -z-50 -mb-24 w-full flex justify-center">
-          <img
-            className="rounded-[32px] mt-8 h-72 w-full max-w-5xl object-cover shadow-2xl ring-1 ring-black/10"
-            src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1600&auto=format&fit=crop"
-            alt="Hero"
-          />
-        </div>
+    <div className="relative -z-50 -mb-24 w-full flex justify-center hidden sm:flex">
+  <img
+    className="rounded-[32px] mt-8 h-72 w-full max-w-5xl object-cover shadow-2xl ring-1 ring-black/10"
+    src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1600&auto=format&fit=crop"
+    alt="Hero"
+  />
+</div>
+
       </main>
     </section>
   )
