@@ -1,4 +1,3 @@
-// src/components/Timeline.jsx
 import React from "react";
 import { agenda } from "../assets/agenda";
 import {
@@ -11,7 +10,6 @@ import {
   FaUtensils,
   FaFlagCheckered,
 } from "react-icons/fa";
-
 
 const typeStyles = {
   registration: "bg-gray-900 text-white",
@@ -54,15 +52,9 @@ const getSessionIcon = (type) => {
 
 const Timeline = () => {
   return (
-<section  id="agenda"  className="relative py-16 md:py-20 bg-white overflow-x-hidden">
-
- <div className="max-w-6xl mx-auto px-4 flex items-start">
-
-        {/* Team Meeting Image - visible on md+ */}
-   
-
-
-
+    <section id="agenda" className="relative py-16 md:py-20 bg-white overflow-x-hidden">
+      {/* Add border here temporarily if debugging: border border-red-500 */}
+      <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-start">
         {/* Timeline Content */}
         <div className="flex-1">
           {/* Heading */}
@@ -78,7 +70,8 @@ const Timeline = () => {
 
           {/* Timeline */}
           <div className="relative">
-            <div className="absolute left-1/2 -translate-x-1/2 h-full w-px bg-gray-200" aria-hidden="true" />
+            {/* Vertical Line - only show on md+ */}
+            <div className="hidden md:block absolute left-1/2 -translate-x-1/2 h-full w-px bg-gray-200" aria-hidden="true" />
 
             <ul role="list" className="space-y-10">
               {agenda.map((item, idx) => (
@@ -96,8 +89,9 @@ const Timeline = () => {
 
                   {/* Right side */}
                   <div className="relative md:pl-10">
+                    {/* Timeline dot - only on md+ */}
                     <span className="hidden md:block absolute -left-[9px] top-2 h-4 w-4 rounded-full border-2 border-gray-900 bg-white" aria-hidden="true" />
-                    
+
                     <div
                       className={[
                         "rounded-2xl p-5 shadow-sm",

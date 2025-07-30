@@ -40,12 +40,12 @@ const App = () => {
         <Speakers />
       </motion.div>
       </div>
-<div id="agenda">
-      <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.4 }} viewport={{ once: true, amount: 0.2 }}>
+< div id="agenda">
+      
         <Timeline />
-      </motion.div>
 
-</div>
+
+</ div>
 <div id="about">
       <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.5 }} viewport={{ once: true, amount: 0.2 }}>
         <About />
